@@ -5,25 +5,43 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+header{
+    width: 100%;
+    height: auto;
+}
 .tête {
     position: relative;
     width: 100%;
-    height: auto;
+    max-height: 100%;
     margin: 0;
 }
 
 .fond1 {
     position: absolute;
     width: 100%;
-    height: 100%;    
+    height: auto;    
+}
+.fond1 img{
+    height: 70%;
+    width: 100%;
 }
 .fond2 {
-    z-index: 1;    
+    z-index: 2;    
     width: 100%;
-    height: auto;
+    height: 80%;
     opacity: 0.1;
 }
 .fond2 video{
-    height: 100%;
     width: 100%;
+    
+}
+.avatar{
+    position: absolute;
+    z-index: 1;    
+    width: 100%;
+    height: auto;
+}
+.avatar img{
+    height: 100px;
+    width: 100px;
 }
