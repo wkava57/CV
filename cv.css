@@ -1,47 +1,171 @@
+
 body{
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    width: 100%;
+    height: auto;
 }
 header{
     width: 100%;
     height: auto;
 }
-.tête {
-    position: relative;
-    width: 100%;
-    max-height: 100%;
-    margin: 0;
+.navbar{
+    position: fixed;
+    background: rgb(4, 31, 59);    
+    top: 0;
+    left: 0;
+    right: 0;
 }
-
-.fond1 {
-    position: absolute;
-    width: 100%;
-    height: auto;    
-}
-.fond1 img{
-    height: 70%;
-    width: 100%;
-}
-.fond2 {
-    z-index: 2;    
-    width: 100%;
-    height: 80%;
-    opacity: 0.1;
-}
-.fond2 video{
-    width: 100%;
+.container{
+    width: auto;
+    height: 70px;
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;  
     
 }
-.avatar{
-    position: absolute;
-    z-index: 1;    
+/*--------------------------------------- ----------------------------------------------- */
+.para1{
+    background-image: url(./iles11.png);
+    width: 100%;
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+/*-------------------------------------------------- -------------------------------------- */
+main{
     width: 100%;
     height: auto;
 }
-.avatar img{
+.Identite{
+    width: 25%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.photoId img{    
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.profil{
+    width: 300px;
+    height: auto;
+    
+}
+.presentation{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px 0 0;
+    background-color: #772837;
+    color: white;
+}
+.presentationTxt{
+    width: 400px;
+    height: 600px;
+    line-height: 2.1;
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+
+.para2{
+    background-image: url(./ile.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+   
+}
+/*-------------------------------------------------------- -------------------------------------------- */
+.para2 h1{
+    font-size: 400%;
+    height: 400px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(216, 122, 34);
+}
+/*----------------------------------------------- --------------------------------------------------------- */
+
+.competence{
+    width: 100%;
+    height: auto;
+    background: #772837;
+
+}
+.competenceTxt{    
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    
+}
+.competenceTxt p{
+    width: 700px;
+    height: 200px;
+    display: flex;
+    
+    align-items: center;
+    color: white;
+}
+
+.SavoirFaire {
+    width:100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+}
+.encadrer{
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border: 3px rgb(207, 173, 59) solid;
+    border-radius: 20px; 
+    
+}
+.titre{
+    width: 700px;
+    height: auto;
+    
+}
+.titre h2{
+    width: 100%;
     height: 100px;
-    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;    
+}
+.paragraphe{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraphe p{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.competenceListe ul li{
+    list-style-type: none;
+    font-size: 150%;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    
 }
