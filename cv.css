@@ -8,6 +8,7 @@ header{
     height: auto;
 }
 .navbar{
+    width: 100%;
     position: fixed;
     background: rgb(4, 31, 59);    
     top: 0;
@@ -16,21 +17,34 @@ header{
 }
 .container{
     width: auto;
-    height: 70px;
+    height: 5vh;
     display: flex;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;  
     
 }
+@media(max-width:768px){
+    .navbar{
+        
+        font-size: 70%;
+    }
+}
+@media(max-width:576px){
+    .navbar{
+        
+        font-size: 50%;
+    }
+}
+
 /*--------------------------------------- ----------------------------------------------- */
-.para1{
-    background-image: url(./iles11.png);
+.imgFond img{
+    /* background-image: url(./iles11.png); */
     width: 100%;
     height: 800px;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;   
+    background-attachment: fixed;
 }
 
 /*-------------------------------------------------- -------------------------------------- */
@@ -39,14 +53,14 @@ main{
     height: auto;
 }
 .Identite{
-    width: 25%;
-    height: 600px;
+    width: 300px;
+    height: 540px;
     justify-content: center;
     align-items: center;
 }
-.photoId img{    
+.photoId-container img{    
     height: 400px;
-    width: 300px;
+    width: 290px;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -54,6 +68,7 @@ main{
 .profil{
     width: 300px;
     height: auto;
+    
     
 }
 .presentation{
@@ -75,6 +90,20 @@ main{
     justify-content: center;
     align-items: center;
 }
+@media(max-width:768px){
+    
+    .Identite{
+        margin: 0;
+    }
+    .presentationTxt{
+        margin: 0;
+    }
+}
+@media(max-width:576px){
+    
+    
+}
+/*----------------------------------------------- --------------------------------------------------------- */
 
 .para2{
     background-image: url(./ile.jpg);
@@ -96,7 +125,6 @@ main{
     align-items: center;
     color: rgb(216, 122, 34);
 }
-/*----------------------------------------------- --------------------------------------------------------- */
 
 .competence{
     width: 100%;
@@ -168,4 +196,32 @@ main{
     display: flex;
     justify-content: center;
     
+}
+@media(max-width:576px){
+    .encadrer{
+        width: 80%;
+    }
+    .titre h2{
+        width: 60%;
+    }
+}
+/*---------------------------------------------- --------------------------------------- */
+.carte{
+   
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background: #772837;
+}
+
+.carte1{
+    height: 100%;       
+    border: 3px blue solid;
+    background-color: #fff;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.carte1 img{
+    border-radius: 10%;
 }
