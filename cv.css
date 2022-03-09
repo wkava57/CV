@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
 body{
     width: 100%;
     height: auto;
@@ -6,6 +12,7 @@ body{
 header{
     width: 100%;
     height: auto;
+    
 }
 .navbar{
     width: 100%;
@@ -14,6 +21,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 300;
 }
 .container{
     width: auto;
@@ -21,8 +29,11 @@ header{
     display: flex;
     text-align: center;
     font-weight: bold;
-    text-transform: uppercase;  
-    
+    text-transform: uppercase;    
+}
+.imgFond p{
+    position: absolute;
+    z-index: 3;
 }
 @media(max-width:768px){
     .navbar{
@@ -39,7 +50,7 @@ header{
 
 /*--------------------------------------- ----------------------------------------------- */
 .imgFond img{
-    /* background-image: url(./iles11.png); */
+    
     width: 100%;
     height: 800px;
     background-position: center;
@@ -73,7 +84,7 @@ main{
 }
 .presentation{
     width: 100%;
-    height: 600px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +119,7 @@ main{
 .para2{
     background-image: url(./ile.jpg);
     width: 100%;
-    height: 400px;
+    height: 25vh;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -117,8 +128,8 @@ main{
 }
 /*-------------------------------------------------------- -------------------------------------------- */
 .para2 h1{
-    font-size: 400%;
-    height: 400px;
+    font-size: 300%;
+    height: 100%;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -208,14 +219,15 @@ main{
 /*---------------------------------------------- --------------------------------------- */
 .carte{
    
-    height: 500px;
+    height: 100%;
     justify-content: center;
     align-items: center;
     background: #772837;
+    
 }
 
 .carte1{
-    height: 100%;       
+    height: 100%;
     border: 3px blue solid;
     background-color: #fff;
     border-radius: 10%;
@@ -223,5 +235,219 @@ main{
     align-items: center;
 }
 .carte1 img{
-    border-radius: 10%;
+    width: 100%;
+    border-radius: 15%;    
 }
+
+/*------------------------------ --------------------------------- */
+.para3{
+    background-image: url(.//chute.jpg);
+    width: 100%;
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+/*------------------------------- -------------------------------- */
+.para3 h1{
+    font-size: 300%;
+    height: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(216, 122, 34);
+}
+@media(max-width:576px){
+    .para3 h1{
+        text-align: center;
+    }
+}
+/*------------------------- -------------------------------------- */
+.parcoursPro{
+    background-color: #772837;
+}
+.container1 {
+overflow: hidden;
+padding: 20px 10px;
+position: relative;
+margin: 0 auto;
+width: 600px;
+}
+
+.container1:before {
+content: '';
+width: 8px;
+height: 100%;
+background: #313131;
+position: absolute;
+left: 20px;
+border-radius: 1rem;
+}
+
+.travail {
+background: white;
+padding: 20px;
+margin: 60px;
+max-width: 500px;
+width: 100%;
+border-radius: 8px;
+position: relative;
+-webkit-box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
+-moz-box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
+box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75);
+}
+
+.travail h2 span {
+font-size: 16px;
+color: #6ab04c;
+border: 2px solid #535c68;
+padding: 4px;
+border-radius: 8px;
+}
+
+.travail:before {
+content: '';
+width: 20px;
+height: 20px;
+background: white;
+left: -10px;
+top: 50%;
+transform: translatey(-50%) rotate(45deg);
+position: absolute;
+z-index: -1;
+border: 2px solid #000;
+}
+
+.travail:after {
+content: '';
+width: 32px;
+height: 32px;
+background: #badc58;
+border-radius: 50%;
+border: 4px solid #313131;
+left: -62px;
+top: 50%;
+transform: translatey(-50%) rotate(45deg);
+position: absolute;
+}
+/*------------------------------------ -------------------------------------- */
+.para4{
+    background-image: url(.//chute.jpg);
+    width: 100%;
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.para4 h1{
+    font-size: 300%;
+    height: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(216, 122, 34);
+}
+/*-------------------------------------------  -----------------------------------*/
+.footer{
+    background-color: #73e1eb;
+    height: 100%;
+}
+.coordonnees{
+    width: 100%;
+    padding: 30px;
+    line-height: 2.5;
+    text-align: center;
+    
+}
+.coordonnees img{
+    width: 2%;
+    height: 2%;
+}
+.icons{
+    padding: 2%;
+}
+form{
+    height: 60vh;
+    width: 50%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+   form h1{  
+    font-size: 20px;  
+  }
+  form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: #747cdf;
+  }
+  form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  form .corps-formulaire .groupe{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  form .corps-formulaire .gauche .groupe input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color:  #747cdf;
+    border-radius: 5px;
+  }
+  form .corps-formulaire .gauche .groupe i{
+    position: absolute;
+    left: 0;
+    top: 35px;
+    padding: 9px 8px;
+    color: #747cdf;
+  }
+  form .corps-formulaire .droite{
+    margin-left: 40px;
+  
+  }
+  form .corps-formulaire .droite .groupe{
+    height: 100%;
+  }
+  form .corps-formulaire .droite .groupe textarea{
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 240px;
+  
+  }
+  form .pied-formulaire button{
+    margin-top: 50px;
+    background-color: #747cdf;
+    color: white;
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+  form .pied-formulaire button:hover{
+    transform: scale(1.05);
+  
+  }
+  @media(max-width:576px){
+    form .corps-formulaire .droite{
+      margin-left: 0;
+    }
+    
+    form{
+      height: 90vh;
+    }
+  }
