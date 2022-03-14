@@ -8,6 +8,7 @@
 body{
     width: 100%;
     height: auto;
+    
 }
 header{
     width: 100%;
@@ -31,10 +32,7 @@ header{
     font-weight: bold;
     text-transform: uppercase;    
 }
-.imgFond p{
-    position: absolute;
-    z-index: 3;
-}
+
 @media(max-width:768px){
     .navbar{
         
@@ -50,12 +48,12 @@ header{
 
 /*--------------------------------------- ----------------------------------------------- */
 .imgFond img{
-    
     width: 100%;
-    height: 800px;
+    height: auto;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+   
 }
 
 /*-------------------------------------------------- -------------------------------------- */
@@ -63,28 +61,31 @@ main{
     width: 100%;
     height: auto;
 }
+.ViePro{
+    background: #772837;
+    color: white;
+}
 .Identite{
-    width: 300px;
-    height: 540px;
+    
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.photoId-container img{    
-    height: 400px;
-    width: 290px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
+.photoId img{    
+    height: auto;
+    width: 100%;
+        
 }
+
 .profil{
-    width: 300px;
+    width: 100%;
     height: auto;
     
     
 }
 .presentation{
     width: 100%;
-    height: 700px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,8 +94,8 @@ main{
     color: white;
 }
 .presentationTxt{
-    width: 400px;
-    height: 600px;
+    margin: 30px;
+    height: auto;
     line-height: 2.1;
     display: flex;
     text-align: justify;
@@ -102,12 +103,17 @@ main{
     align-items: center;
 }
 @media(max-width:768px){
-    
     .Identite{
-        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .photoId img{
+        width: 30%;
     }
     .presentationTxt{
-        margin: 0;
+     
     }
 }
 @media(max-width:576px){
@@ -223,7 +229,7 @@ main{
     justify-content: center;
     align-items: center;
     background: #772837;
-    
+    padding: 50px;
 }
 
 .carte1{
@@ -233,12 +239,27 @@ main{
     border-radius: 10%;
     justify-content: center;
     align-items: center;
+   
 }
 .carte1 img{
     width: 100%;
     border-radius: 15%;    
 }
+.card-text{
+    height: 60px;
+}
+.btn{
+    width: 100%;
+}
+@media(max-width:768px) {
+    .coeur {
+        width: 83%;
+    }
+   .chalet {       
+       padding-bottom: 10%;
 
+   }
+}
 /*------------------------------ --------------------------------- */
 .para3{
     background-image: url(.//chute.jpg);
@@ -274,7 +295,7 @@ position: relative;
 margin: 0 auto;
 width: 600px;
 }
-
+ 
 .container1:before {
 content: '';
 width: 8px;
@@ -351,15 +372,16 @@ position: absolute;
 }
 /*-------------------------------------------  -----------------------------------*/
 .footer{
-    background-color: #73e1eb;
+    background: #772837;
     height: 100%;
+    
 }
 .coordonnees{
     width: 100%;
     padding: 30px;
     line-height: 2.5;
     text-align: center;
-    
+    color: white;
 }
 .coordonnees img{
     width: 2%;
@@ -369,9 +391,9 @@ position: absolute;
     padding: 2%;
 }
 form{
-    height: 60vh;
-    width: 50%;
-    background-color: white;
+    height: auto;
+    width: 100%;
+    background-color: rgb(233, 227, 227);
     padding: 20px;
     border-radius: 10px;
   }
@@ -384,9 +406,10 @@ form{
     background-color: #747cdf;
   }
   form .corps-formulaire{
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+   
   }
   form .corps-formulaire .groupe{
     position: relative;
@@ -409,7 +432,7 @@ form{
     color: #747cdf;
   }
   form .corps-formulaire .droite{
-    margin-left: 40px;
+    margin-left: 10px;
   
   }
   form .corps-formulaire .droite .groupe{
@@ -424,10 +447,17 @@ form{
     border-radius: 5px;
     resize: none;
     height: 240px;
-  
+    
   }
-  form .pied-formulaire button{
-    margin-top: 50px;
+  .pied-formulaire{
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+  }
+  .pied-formulaire button{
+    
     background-color: #747cdf;
     color: white;
     font-size: 15px;
@@ -437,8 +467,9 @@ form{
     outline: none;
     cursor: pointer;
     transition: transform 0.5s;
-  }
-  form .pied-formulaire button:hover{
+    
+}
+  .pied-formulaire button:hover{
     transform: scale(1.05);
   
   }
@@ -449,5 +480,26 @@ form{
     
     form{
       height: 90vh;
+      
     }
   }
+  .boite{
+    background: #772837;
+    
+     
+  }
+  .blocForm{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5%;
+  }
+  .map{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      height: auto;
+      padding: 5%;
+  }
+ 
